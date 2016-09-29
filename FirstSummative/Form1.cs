@@ -142,7 +142,7 @@ namespace FirstSummative
             formGraphics.Clear(Color.Coral);
 
             //Bring in Text
-
+             
             playerTwo.Play(); 
             fg.DrawString("Your naturally warm personality is going to", drawFont, thirdBrush, 0, 10);
             fg.DrawString("melt any icy personalities you encounter today", drawFont, thirdBrush, 0, 40);
