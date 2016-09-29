@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Media;
 
-// header comment goes here
+//Addie Pant's Graphics Summative
 
 namespace FirstSummative
 {
