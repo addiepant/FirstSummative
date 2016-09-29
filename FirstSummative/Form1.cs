@@ -11,6 +11,7 @@ using System.Threading;
 using System.Media;
 
 //Addie Pant's Graphics Summative
+//Sept 2016
 
 namespace FirstSummative
 {
