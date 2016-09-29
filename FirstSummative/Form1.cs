@@ -12,6 +12,7 @@ using System.Media;
 
 //Addie Pant's Graphics Summative
 //Sept 2016
+//Program: Press button, zodiac constellation shows up, the horoscope
 
 namespace FirstSummative
 {
@@ -34,11 +35,14 @@ namespace FirstSummative
             SoundPlayer playerTwo = new SoundPlayer(Properties.Resources.shootingstar);
             Graphics fg = this.CreateGraphics(); // set variables
             Font drawFont = new Font("Arial", 09, FontStyle.Bold);
+
+            //Play Sound
             player.Play();
 
             //Hide butons and label
             openButton.Hide();
             notificationLabel.Hide();
+            nameTitle.Hide();
             //Form Elipses/stars
             Thread.Sleep(500);
             formGraphics.FillEllipse(drawBrush, 246, 55, 6, 6);
@@ -111,7 +115,9 @@ namespace FirstSummative
             player.Play();
             Thread.Sleep(1000);
 
+            //Play sound
             player.Play();
+
             //Change Elipse Colour
             Thread.Sleep(1000);
             formGraphics.FillEllipse(thirdBrush, 246, 55, 6, 6);
@@ -139,11 +145,11 @@ namespace FirstSummative
             player.Play();
             Thread.Sleep(1000);
 
+            //Clear Screen
             formGraphics.Clear(Color.Coral);
 
             //Bring in Text
-             
-            playerTwo.Play(); 
+            playerTwo.Play();
             fg.DrawString("Your naturally warm personality is going to", drawFont, thirdBrush, 0, 10);
             fg.DrawString("melt any icy personalities you encounter today", drawFont, thirdBrush, 0, 40);
             fg.DrawString("so it's going to be a very social day whether you", drawFont, thirdBrush, 0, 70);
@@ -153,17 +159,7 @@ namespace FirstSummative
 
 
 
-
-
-
-
-
-
-
-
-
-
-
         }
     }
 }
+

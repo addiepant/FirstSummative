@@ -28,8 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(greetingCard));
             this.openButton = new System.Windows.Forms.Button();
             this.notificationLabel = new System.Windows.Forms.Label();
+            this.nameTitle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // openButton
@@ -55,12 +57,24 @@
             this.notificationLabel.TabIndex = 1;
             this.notificationLabel.Text = "Your Horscope for the day is in!";
             // 
+            // nameTitle
+            // 
+            this.nameTitle.AutoSize = true;
+            this.nameTitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.nameTitle.Location = new System.Drawing.Point(72, 129);
+            this.nameTitle.Name = "nameTitle";
+            this.nameTitle.Size = new System.Drawing.Size(143, 13);
+            this.nameTitle.TabIndex = 2;
+            this.nameTitle.Text = "Addie Pant- September 2016";
+            // 
             // greetingCard
             // 
             this.BackColor = System.Drawing.Color.Black;
             this.ClientSize = new System.Drawing.Size(284, 261);
+            this.Controls.Add(this.nameTitle);
             this.Controls.Add(this.notificationLabel);
             this.Controls.Add(this.openButton);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "greetingCard";
             this.Text = "Horoscope";
             this.ResumeLayout(false);
@@ -74,6 +88,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button openButton;
         private System.Windows.Forms.Label notificationLabel;
+        private System.Windows.Forms.Label nameTitle;
     }
 }
 
