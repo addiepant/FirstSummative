@@ -28,37 +28,43 @@ namespace FirstSummative
             Graphics formGraphics = this.CreateGraphics();
             Pen drawPen = new Pen(Color.Gold, 2);
             SolidBrush drawBrush = new SolidBrush(Color.Gold);
+            SolidBrush secondBrush = new SolidBrush(Color.LightCoral);
+            SolidBrush thirdBrush = new SolidBrush(Color.LavenderBlush);
             SoundPlayer player = new SoundPlayer(Properties.Resources.chime);
+            SoundPlayer playerTwo = new SoundPlayer(Properties.Resources.shootingstar);
+            Graphics fg = this.CreateGraphics(); // set variables
+            Font drawFont = new Font("Arial", 09, FontStyle.Bold);
+            player.Play();
 
             //Hide butons and label
             openButton.Hide();
             notificationLabel.Hide();
-
             //Form Elipses/stars
-            formGraphics.FillEllipse(drawBrush, 246, 55, 5, 5);
-            player.Play();
             Thread.Sleep(500);
-            formGraphics.FillEllipse(drawBrush, 226, 45, 5, 5);
+            formGraphics.FillEllipse(drawBrush, 246, 55, 6, 6);
             player.Play();
-            Thread.Sleep(500);
-            formGraphics.FillEllipse(drawBrush, 206, 112, 5, 5);
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(drawBrush, 226, 45, 6, 6);
             player.Play();
-            Thread.Sleep(500);
-            formGraphics.FillEllipse(drawBrush, 236, 123, 5, 5);
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(drawBrush, 206, 112, 6, 6);
             player.Play();
-            Thread.Sleep(500);
-            formGraphics.FillEllipse(drawBrush, 249, 155, 5, 5);
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(drawBrush, 236, 123, 6, 6);
             player.Play();
-            Thread.Sleep(500);
-            formGraphics.FillEllipse(drawBrush, 134, 183, 5, 5);
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(drawBrush, 249, 155, 6, 6);
             player.Play();
-            Thread.Sleep(500);
-            formGraphics.FillEllipse(drawBrush, 77, 210, 5, 5);
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(drawBrush, 134, 183, 6, 6);
             player.Play();
-            Thread.Sleep(500);
-            formGraphics.FillEllipse(drawBrush, 117, 146, 5, 5);
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(drawBrush, 77, 210, 6, 6);
             player.Play();
-            Thread.Sleep(500);
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(drawBrush, 117, 146, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
 
             //Form Lines
             formGraphics.DrawLine(drawPen, 246, 55, 226, 45);
@@ -77,7 +83,73 @@ namespace FirstSummative
             Thread.Sleep(500);
             formGraphics.DrawLine(drawPen, 117, 146, 134, 183);
 
-            
+            player.Play();
+            //Change Elipse Colour
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(secondBrush, 246, 55, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(secondBrush, 226, 45, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(secondBrush, 206, 112, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(secondBrush, 236, 123, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(secondBrush, 249, 155, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(secondBrush, 134, 183, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(secondBrush, 77, 210, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(secondBrush, 117, 146, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+
+            player.Play();
+            //Change Elipse Colour
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(thirdBrush, 246, 55, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(thirdBrush, 226, 45, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(thirdBrush, 206, 112, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(thirdBrush, 236, 123, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(thirdBrush, 249, 155, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(thirdBrush, 134, 183, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(thirdBrush, 77, 210, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+            formGraphics.FillEllipse(thirdBrush, 117, 146, 6, 6);
+            player.Play();
+            Thread.Sleep(1000);
+
+            formGraphics.Clear(Color.Coral);
+
+            //Bring in Text
+
+            playerTwo.Play(); 
+            fg.DrawString("Your naturally warm personality is going to", drawFont, thirdBrush, 0, 10);
+            fg.DrawString("melt any icy personalities you encounter today", drawFont, thirdBrush, 0, 40);
+            fg.DrawString("so it's going to be a very social day whether you", drawFont, thirdBrush, 0, 70);
+            fg.DrawString("had planned on it or not.", drawFont, thirdBrush, 0, 100);
+
+
 
 
 

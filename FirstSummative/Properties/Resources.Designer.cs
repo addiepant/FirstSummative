@@ -68,5 +68,14 @@ namespace FirstSummative.Properties {
                 return ResourceManager.GetStream("chime", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.IO.UnmanagedMemoryStream similar to System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream shootingstar {
+            get {
+                return ResourceManager.GetStream("shootingstar", resourceCulture);
+            }
+        }
     }
 }
